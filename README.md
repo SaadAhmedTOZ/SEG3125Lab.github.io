@@ -1,2 +1,2 @@
-# SEG3125Lab1
-Lab 1 of SEG3125
+# SEG3125Lab
+Project for SEG3125
