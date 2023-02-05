@@ -52,4 +52,24 @@ h1, h3 {
   border-top: none;
   border-radius: 0px 0px 5px 5px;
   font-family: 'Inter', sans-serif;
+  height: 100%;
+}
+
+#slideout {
+  background: #dbe2e9;
+  color: #333;
+  position: fixed;
+  border-radius: 10px 0px 0px 10px;
+  bottom: 0;
+  right: -520px;
+  width: 300px;
+  height: 75%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#slideout.on {
+  right: 0;
 }
