@@ -23,7 +23,7 @@ function openInfo(evt, tabName) {
 }
 
 function slideOut(evt, tabName) {
-	tabName.toggleClass('on');
+	document.getElementById(tabName).toggleClass('on');
 }
 
 
