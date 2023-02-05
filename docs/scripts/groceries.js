@@ -9,7 +9,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 1.99
+		price: 1.99,
+		image: "images/broccoli.jpeg"
 	},
 	{
 		name: "eggs $1.99",
@@ -17,7 +18,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 1.99
+		price: 1.99,
+		image: "images/eggs.jpeg"
 	},
 	{
 		name: "bread $2.35",
@@ -25,7 +27,8 @@ var products = [
 		glutenFree: false,
 		organic: true,
 		notorganic: false,
-		price: 2.35
+		price: 2.35,
+		image: "images/bread.jpeg"
 	},
 	{
 		name: "noodles $2.35",
@@ -33,7 +36,8 @@ var products = [
 		glutenFree: false,
 		organic: true,
 		notorganic: false,
-		price: 2.35
+		price: 2.35,
+		image: "images/noodles.jpeg"
 	},
 	{
 		name: "cookies $2.99",
@@ -41,7 +45,8 @@ var products = [
 		glutenFree: false,
 		organic: false,
 		notorganic: true,
-		price: 2.99
+		price: 2.99,
+		image: "images/cookies.jpg"
 	},
 	{
 		name: "potato chips $2.99",
@@ -49,7 +54,8 @@ var products = [
 		glutenFree: true,
 		organic: false,
 		notorganic: true,
-		price: 2.99
+		price: 2.99,
+		image: "images/potatochips.jpg"
 	},
 	{
 		name: "donuts $3.35",
@@ -57,7 +63,8 @@ var products = [
 		glutenFree: false,
 		organic: false,
 		notorganic: true,
-		price: 3.35
+		price: 3.35,
+		image: "images/donuts.png"
 	},
 	{
 		name: "milk $3.99",
@@ -65,7 +72,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 3.99
+		price: 3.99,
+		image: "images/milk.jpg"
 	},
 	{
 		name: "chicken $8.00",
@@ -73,7 +81,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 8.00
+		price: 8.00,
+		image: "images/chicken.jpg"
 	},
 	{
 		name: "beef $9.00",
@@ -81,7 +90,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 9.00
+		price: 9.00,
+		image: "images/beef.jpg"
 	},
 	{
 		name: "salmon $10.00",
@@ -89,7 +99,8 @@ var products = [
 		glutenFree: true,
 		organic: true,
 		notorganic: false,
-		price: 10.00
+		price: 10.00,
+		image: "images/salmon.jpg"
 	}
 ];
 	
@@ -122,6 +133,32 @@ function restrictListProducts(prods, restriction) {
 	}
 
 	return product_names;
+}
+
+function ProductsIMG(prods, restriction) {
+	let product_img = [];
+	for (let i=0; i<prods.length; i+=1) {
+		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+			product_img.push(prods[i].image);
+		}
+		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_img.push(prods[i].image);
+		}
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
+			product_img.push(prods[i].image);
+		}
+		else if ((restriction == "notOrganic") && (prods[i].notorganic == true)){
+			product_img.push(prods[i].image);
+		}
+		else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].glutenFree == true)&& (prods[i].vegetarian == true)){
+			product_img.push(prods[i].image);
+		}
+		else if (restriction == "None"){
+			product_img.push(prods[i].image);
+		}
+	}
+
+	return product_img;
 }
 
 // Calculate the total price of items, with received parameter being a list of products

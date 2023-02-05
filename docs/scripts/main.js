@@ -45,7 +45,8 @@ function populateListProductChoices(slct1, slct2) {
 		
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1.value);
-
+	
+	var imgArray = ProductsIMG(products, s1.value);
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
@@ -53,7 +54,9 @@ function populateListProductChoices(slct1, slct2) {
 	for (i = 0; i < optionArray.length; i++) {
 			
 		var productName = optionArray[i];
+		var productImg = imgArray[i];
 		// create the checkbox and add in HTML DOM
+		s2.appendChild(document.createElement("br"));  
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
@@ -65,9 +68,21 @@ function populateListProductChoices(slct1, slct2) {
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
-		
+
+		s2.appendChild(document.createElement("br")); 
+
+		var img = document.createElement("img");
+		img.htmlFor = productName;
+		img.src = productImg;
+		img.width="200";
+		img.height="200";
+		s2.appendChild(img);
+	
+
+
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		s2.appendChild(document.createElement("br"));   
+
 	}
 }
 
