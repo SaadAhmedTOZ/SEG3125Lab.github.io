@@ -15,45 +15,12 @@
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="slideOutClient(event, 'slideoutcart')">Client</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="btn btn-default" onclick="slideOut(event, 'Cart')">Cart</button>
+  <button class="btn btn-default" onclick="slideOutCart(event, 'slideoutcart')">Cart</button>
 </div>
 
 <!-- Tab content -->
-<div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-  What is your name? 
-  <div class="inputBox"> 
-    <input type="text" id="name-answer" name="Name-Answer" placeholder="Gilbert" required="required">
-  </div>
-  
-  <br>
-  </br>
-
-  How old are you?
-  <div class="inputBox"> 
-    <input type="text" id="text-answer" name="Text-Answer" placeholder="45" required="required">
-  </div>
-  
-  <br>
-  </br>
-
-	Choose a Category:
-  <br>
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="GlutenFree&Vegetarian">GlutenFree & Vegetarian</option>
-    <option value="Organic">Organic</option>
-    <option value="notOrganic">NotOrganic</option>
-    <option value="None">None</option>
-	</select>
-  <br>
-  <br>
-</div>
 
 <div id="Products" class="tabcontent">
   <h3>Your Targeted Products</h3>
@@ -73,10 +40,44 @@
 
 </div>
 
-<div id="slideout">
+<div id="slideoutcart">
   <h3>Cart</h3>
   <!-- <p>Here is your cart.</p> -->
   <div id="displayCart"></div>
+</div>
+
+<div id="slideoutclient">
+    <h3>Client Information</h3>
+    <p>Tell us a bit about you.</p>
+    What is your name? 
+    <div class="inputBox"> 
+      <input type="text" id="name-answer" name="Name-Answer" placeholder="Gilbert" required="required">
+    </div>
+    
+    <br>
+    </br>
+  
+    How old are you?
+    <div class="inputBox"> 
+      <input type="text" id="text-answer" name="Text-Answer" placeholder="45" required="required">
+    </div>
+    
+    <br>
+    </br>
+  
+    Choose a Category:
+    <br>
+    <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <option value=""></option>
+    <option value="Vegetarian">Vegetarian</option>
+      <option value="GlutenFree">GlutenFree</option>
+      <option value="GlutenFree&Vegetarian">GlutenFree & Vegetarian</option>
+      <option value="Organic">Organic</option>
+      <option value="notOrganic">NotOrganic</option>
+      <option value="None">None</option>
+    </select>
+    <br>
+    <br>
 </div>
 
 

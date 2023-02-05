@@ -22,9 +22,14 @@ function openInfo(evt, tabName) {
 
 }
 
-function slideOut(evt, tabName) {
-	$('#slideout').toggleClass('on');
+function slideOutCart(evt, tabName) {
+	$('#slideoutcart').toggleClass('on');
 }
+
+function slideOutClient(evt, tabName) {
+	$('#slideoutclient').toggleClass('on');
+}
+
 
 
 	

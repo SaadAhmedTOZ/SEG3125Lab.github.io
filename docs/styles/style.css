@@ -55,7 +55,7 @@ h1, h3 {
   height: 100%;
 }
 
-#slideout {
+#slideoutcart {
   background: #dbe2e9;
   color: #333;
   position: fixed;
@@ -70,6 +70,25 @@ h1, h3 {
   transition-duration: 0.3s;
 }
 
-#slideout.on {
+#slideoutcart.on {
   right: 0;
+}
+
+#slideoutclient {
+  background: #dbe2e9;
+  color: #333;
+  position: fixed;
+  border-radius: 10px 0px 0px 10px;
+  bottom: 0;
+  left: -520px;
+  width: 300px;
+  height: 75%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+#slideoutclient.on {
+  left: 0;
 }
