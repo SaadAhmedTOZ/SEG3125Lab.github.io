@@ -22,6 +22,10 @@ function openInfo(evt, tabName) {
 
 }
 
+function slideOut(evt, tabName) {
+	tabName.toggleClass('on');
+}
+
 
 	
 // generate a checkbox list from a list of products
