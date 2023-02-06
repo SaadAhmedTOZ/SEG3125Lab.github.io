@@ -102,4 +102,6 @@ h1, h3 {
 
 .names {
   bottom: 0;
+  /* display: fixed; */
+  position: absolute;
 }
