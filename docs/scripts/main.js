@@ -310,7 +310,7 @@ function selectedItems(){
 	// build list of selected item
 	var para = document.createElement("P");
 	
-	para.innerHTML = "Hello " + userName +", here is your cart. You selected : ";
+	para.innerHTML = "Hello " + userName +", here are the item(s) in your ABC Grocery cart:";
 	para.appendChild(document.createElement("br"));
 	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
