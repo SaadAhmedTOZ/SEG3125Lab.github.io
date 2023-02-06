@@ -10,7 +10,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 1.99,
-		image: "images/broccoli.jpeg"
+		image: "images/broccoli.jpeg",
+		type: "Vegetables"
 	},
 	{
 		name: "eggs $1.99",
@@ -19,7 +20,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 1.99,
-		image: "images/eggs.jpeg"
+		image: "images/eggs.jpeg",
+		type: "Meats"
 	},
 	{
 		name: "bread $2.35",
@@ -28,7 +30,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 2.35,
-		image: "images/bread.jpeg"
+		image: "images/bread.jpeg",
+		type: "Wheat"
 	},
 	{
 		name: "noodles $2.35",
@@ -37,7 +40,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 2.35,
-		image: "images/noodles.jpeg"
+		image: "images/noodles.jpeg",
+		type: "Wheat"
 	},
 	{
 		name: "cookies $2.99",
@@ -46,7 +50,8 @@ var products = [
 		organic: false,
 		notorganic: true,
 		price: 2.99,
-		image: "images/cookies.jpg"
+		image: "images/cookies.jpg",
+		type: "Snacks"
 	},
 	{
 		name: "potato chips $2.99",
@@ -55,7 +60,8 @@ var products = [
 		organic: false,
 		notorganic: true,
 		price: 2.99,
-		image: "images/potatochips.jpg"
+		image: "images/potatochips.jpg",
+		type: "Snacks"
 	},
 	{
 		name: "donuts $3.35",
@@ -64,7 +70,8 @@ var products = [
 		organic: false,
 		notorganic: true,
 		price: 3.35,
-		image: "images/donuts.png"
+		image: "images/donuts.png",
+		type: "Snacks"
 	},
 	{
 		name: "milk $3.99",
@@ -73,7 +80,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 3.99,
-		image: "images/milk.jpg"
+		image: "images/milk.jpg",
+		type: "Dairy"
 	},
 	{
 		name: "chicken $8.00",
@@ -82,7 +90,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 8.00,
-		image: "images/chicken.jpg"
+		image: "images/chicken.jpg",
+		type: "Meats"
 	},
 	{
 		name: "beef $9.00",
@@ -91,7 +100,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 9.00,
-		image: "images/beef.jpg"
+		image: "images/beef.jpg",
+		type: "Meats"
 	},
 	{
 		name: "salmon $10.00",
@@ -100,7 +110,8 @@ var products = [
 		organic: true,
 		notorganic: false,
 		price: 10.00,
-		image: "images/salmon.jpg"
+		image: "images/salmon.jpg",
+		type: "Meats"
 	}
 ];
 	
@@ -155,6 +166,32 @@ function ProductsIMG(prods, restriction) {
 		}
 		else if (restriction == "None"){
 			product_img.push(prods[i].image);
+		}
+	}
+
+	return product_img;
+}
+
+function ProductsType(prods, restriction) {
+	let product_img = [];
+	for (let i=0; i<prods.length; i+=1) {
+		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+			product_img.push(prods[i].type);
+		}
+		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+			product_img.push(prods[i].type);
+		}
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
+			product_img.push(prods[i].type);
+		}
+		else if ((restriction == "notOrganic") && (prods[i].notorganic == true)){
+			product_img.push(prods[i].type);
+		}
+		else if ((restriction == "GlutenFree&Vegetarian") && (prods[i].glutenFree == true)&& (prods[i].vegetarian == true)){
+			product_img.push(prods[i].type);
+		}
+		else if (restriction == "None"){
+			product_img.push(prods[i].type);
 		}
 	}
 
