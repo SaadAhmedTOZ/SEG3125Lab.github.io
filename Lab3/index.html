@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>SEG3125 Grocery Store</title>
+</head>
+
+<body>
+
+<!-- <h1>ABC Grocery Store</h1> -->
+<img class="logo" src='images\ABC_Grocery_Store.png'>  
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Customer')">Customer</button><p>></p>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button><p>></p>
+  <button class="btn btn-default" onclick="slideOutCart(event, 'slideoutcart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Customer" class="tabcontent">
+    <h3>Customer Information</h3>
+    <p>Tell us a bit about you.</p>
+    
+    Name 
+    <div class="inputBox"> 
+      <input type="text" id="name-answer" name="Name-Answer" placeholder="Gilbert" required="required">
+    </div>
+    
+    <br>
+    </br>
+  
+    Age
+    <div class="inputBox"> 
+      <input type="text" id="age-answer" name="number-Answer" placeholder="45" required="required">
+    </div>
+    
+    <br>
+    </br>
+  
+    Dietary Preferences
+    <br>
+    <input type="radio" name="dietSelect" id = "Vegetarian" value = "Vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="Vegetarian">Vegetarian</label>
+    <br>
+    <input type="radio" name="dietSelect" id = "GlutenFree" value = "GlutenFree" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="GlutenFree">Gluten-Free</label>
+    <br>
+    <input type="radio" name="dietSelect" id = "GlutenFree&Vegetarian" value = "GlutenFree&Vegetarian" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="GlutenFree&Vegetarian">Gluten-Free & Vegetarian</label>
+    <br>
+    <input type="radio" name="dietSelect" id = "Organic" value = "Organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="Organic">Organic</label>
+    <br>
+    <input type="radio" name="dietSelect" id = "notOrganic" value = "notOrganic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="notOrganic">Non-Organic</label>
+    <br>
+    <input type="radio" name="dietSelect" id = "None" value = "None" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <label for="None">None</label>
+
+    <br>
+    <br>
+    <i class="names">This webpage was designed by Saad, Sheena, Kareem, and Murray.</i>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Product Results</h3>
+  <p>Here is a list of items based on your dietary preferences.</p>
+
+	 Select Items to Buy:
+   <br>
+	 <div id="displayProduct"></div>
+   <br>
+   <br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected item(s) to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <!-- <p>Here is your cart.</p> -->
+
+</div>
+
+<div id="slideoutcart">
+  <h3>Cart</h3>
+  <!-- <p>Here is your cart.</p> -->
+  <div id="displayCart"></div>
+</div>
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+
+</body>
+</html>
