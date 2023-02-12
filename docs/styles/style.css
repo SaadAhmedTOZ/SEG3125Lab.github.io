@@ -118,17 +118,6 @@ h1 {
 .btn-stylists {
   background-color: #740302;
 }
-
-.card-img-top{
-  float: left;
-  width:  250px;
-  height: 300px;
-  object-fit: cover;
-}
-.card-body{
-  height:500px
-}
-
 /* from www.w3schools.com */
 .arrow {
   border: solid #d1d1d1;;
