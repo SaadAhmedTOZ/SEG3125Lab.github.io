@@ -16,7 +16,7 @@ h1 {
 }
 
 .container-fluid {
-  background: rgba(201,104,104,0.7);
+  background: #740302;
   display: flex;
   align-items: center;
   justify-content: center
@@ -25,6 +25,7 @@ h1 {
 .container-xl {
   background: rgba(255, 255, 255, 0.7);
   width: 100%;
+  padding: 15px;
 }
 
 .img {
@@ -37,7 +38,7 @@ h1 {
 }
 
 .form{
-  background-color: rgb(83, 0, 0);
+  background-color: #b85654;
 }
 
 .rounded {
@@ -62,7 +63,7 @@ h1 {
 }
 
 .subtitle {
-  background: rgba(201,104,104,0.7);
+  background: #750604;
   width: 100%;
   display: flex;
   align-items: start;
@@ -79,5 +80,14 @@ h1 {
 }
 
 .card-link{
-  color: rgb(204, 36, 36);
+  color:#740302;
+}
+
+.card-style {
+  background-color: #b85654;
+}
+
+.btn-style {
+  background-color: #740302;
+  color: #d1d1d1;
 }
