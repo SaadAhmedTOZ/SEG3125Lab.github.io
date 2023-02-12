@@ -32,12 +32,26 @@
     <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
     <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
     <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
-    <div class="container-fluid my-2 text-white">
-        <div class="title">
+    <div class="container-md my-2 text-white rounded">
+        <div class="title-welcome ">
             <h1 class="display-3">Welcome to  <strong>Cherry Hair</strong></h1>
             <p><b>Hair so good you will want to put a cherry on top!</b></p>
+            <img class="img" src="images/LogoRectangle.png">  
         </div>
-        <img class="img" src="images/LogoRectangle.png">        
+              
+    </div>
+
+    
+    <div class="container-xl rounded " style="background-color: #ffffff; padding: 30px;">
+        <img class="img" style="display: flex" src="images/salon.jpg">
+        <br>
+        <h3>About Us</h3>
+        <p>At Cherry Hair, we believe that a great haircut can change your day. Our experienced stylists are dedicated to providing you with personalized attention and a fantastic hair-cutting experience. We use only the finest products and cutting-edge techniques to ensure that you leave our shop feeling refreshed and looking your best. Our goal is to create a welcoming and friendly environment where you can sit back, relax, and let us take care of your hair needs. Come visit us today and see why we are the go-to hair cutters for so many satisfied customers!</p>
+        <p class="text-uppercase"><strong>Location:</strong></p>
+        <p >673 Strawberry Road, Banana Town, OJ P1E 6O6 </p>
+        <p class="text-uppercase"><strong>Contact Us:</strong></p>
+        <p >123-456-7890 </p>
+        <p >CherryHair@fruits.com</p>  
     </div>
 
     <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
@@ -50,19 +64,8 @@
         
     </div> -->
 
-    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
-    <!-- These can be useful for making sure someone reads something before continuing -->
-    <div class="container">
-        <div class="alert alert-danger alert-dismissible fade show">
-            <h2>SPECIAL OFFER!</h2>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            Use code<strong> CHERRYHAIR2023 </strong>for <strong>25%</strong> off your first appointment!
-        </div>
-    </div>
-
-
     <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <div class="container-xl rounded home_text about-us border p-3">
+    <!-- <div class="container-xl rounded home_text about-us border p-3">
         <h3>About Us</h3>
         <p>At Cherry Hair, we believe that a great haircut can change your day. Our experienced stylists are dedicated to providing you with personalized attention and a fantastic hair-cutting experience. We use only the finest products and cutting-edge techniques to ensure that you leave our shop feeling refreshed and looking your best. Our goal is to create a welcoming and friendly environment where you can sit back, relax, and let us take care of your hair needs. Come visit us today and see why we are the go-to hair cutters for so many satisfied customers!</p>
         <p class="text-uppercase"><strong>Location:</strong></p>
@@ -70,8 +73,7 @@
         <p class="text-uppercase"><strong>Contact Us:</strong></p>
         <p >123-456-7890 </p>
         <p >CherryHair@fruits.com</p>
-    </div>
-
+    </div> -->
 
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
@@ -255,7 +257,7 @@
     <!-- Here a block button (taking the full width) opens/closes the collapsible -->
     <!-- Here a single card is used, but card columns could be used -->
     <div class="container stylists rounded">
-        <a href="#mechanics" class="btn btn-style btn-lg btn-block" data-toggle="collapse">Meet our Stylists</a>
+        <a href="#mechanics" class="btn btn-style btn-lg btn-block btn-stylists rounded" data-toggle="collapse">Meet our Stylists Below <p><i class="arrow down"></i></p></a>
         <div id="mechanics" class="collapse">
             <br>
             <div class="card-columns card-center rounded bg-white p-3">

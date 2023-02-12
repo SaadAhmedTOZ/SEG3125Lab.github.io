@@ -28,9 +28,19 @@ h1 {
   padding: 15px;
 }
 
+.container-md {
+  background: #740302;
+  width: 100%;
+  padding: 15px;
+}
 
 .img {
-  margin-left: 15rem;
+  /* text-align: center;
+  align-items: center;
+  justify-content: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
@@ -55,8 +65,15 @@ h1 {
   color: rgb(83, 0, 0)
 }
 
+.title-welcome {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
 .title {
-  margin-right: 15rem;
+  padding: 15px;
 }
 
 .alert-danger {
@@ -98,6 +115,10 @@ h1 {
   justify-content: center
   
 }
+.btn-stylists {
+  background-color: #740302;
+}
+
 .card-img-top{
   float: left;
   width:  250px;
@@ -105,5 +126,18 @@ h1 {
   object-fit: cover;
 }
 .card-body{
-  height:500px
+  height:470px
+}
+
+/* from www.w3schools.com */
+.arrow {
+  border: solid #d1d1d1;;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
