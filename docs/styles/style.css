@@ -43,6 +43,17 @@ h1 {
   margin-right: auto;
 }
 
+.img-salon {
+  /* text-align: center;
+  align-items: center;
+  justify-content: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 75%;
+  /* height: auto; */
+}
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: rgb(233, 153, 153)!important;
   border-color: rgb(119, 8, 8);
