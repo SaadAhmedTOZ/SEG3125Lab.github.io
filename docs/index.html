@@ -18,7 +18,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
+    
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
@@ -32,14 +36,34 @@
     <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
     <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
     <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
-    <div class="container-md my-2 text-white rounded">
+    <div class="container-fluid text-white">
         <div class="title-welcome ">
             <h1 class="display-3">Welcome to  <strong>Cherry Hair</strong></h1>
-            <p><b>Hair so good you will want to put a cherry on top!</b></p>
-            <img class="img" src="images/LogoRectangle.png">  
+            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;Hair so good you will want to put a cherry on top!</b></p>
         </div>
-              
+        <img class="img" src="images/LogoRectangle.png">  
     </div>
+
+    <nav class="navbar stickynav bottom-rounded navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#first"><img src="images/peigne.png" alt="logo" style="width:30px;">First</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#second"><img src="images/tiger.png" alt="logo" style="width:30px;">Second</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#third">Third</a>
+            </li>   
+         </ul>
+        </div>  
+      </nav>
+      <br>
 
     <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- These can be useful for making sure someone reads something before continuing -->
