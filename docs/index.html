@@ -406,18 +406,22 @@
                     <div class="card-body">
                         <p><b>Please choose your preferred hairstylist.</b></p>
 
-                        <input type="checkbox" id="person1" name="person1" value="Alex">
+                        <input type="radio" id="person1" name="stylists" value="Alex">
                         <label for="person1">Alex</label><br>
 
-                        <input type="checkbox" id="person2" name="person2" value="Jules">
+                        <input type="radio" id="person2" name="stylists" value="Jules">
                         <label for="person2">Jules</label><br>
 
-                        <input type="checkbox" id="person3" name="person3" value="Pia">
+                        <input type="radio" id="person3" name="stylists" value="Pia">
                         <label for="person3">Pia</label><br>
+
+                        <input type="radio" id="none" name="stylists" value="None">
+                        <label for="none">None</label><br>
 
                     </div>
                 </div>
             </div>
+        </div>
             <div class="card">
                 <div class="card-header">
                     <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a Date</a>
@@ -430,7 +434,7 @@
                         <div class="form-group row">
                             <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
                             <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                <input type="text" id="datepicker">
                             </div>
                         </div>
                     </div>

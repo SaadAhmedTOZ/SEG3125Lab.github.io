@@ -29,4 +29,24 @@ $(document).ready(function(){
         }
     });
 
-});
+    $( "#datepicker" ).datepicker(
+           {
+               beforeShowDay: function(d){
+                   var day = d.getDay();
+                   if((!document.getElementById("person1").checked && !document.getElementById("person2").checked && !document.getElementById("person3").checked) || document.getElementById("none").checked){
+                       return [(day == 0 || day == 1 || day == 2 || day == 3 || day == 4 || day == 5 || day == 6 || day == 7), ''];
+                   }    
+                    else{
+                        if(document.getElementById("person1").checked){
+                            return [(day != 0), ''];
+                        }
+                        if(document.getElementById("person2").checked){
+                            return [(day != 4), ''];
+                        }
+                        if(document.getElementById("person3").checked){
+                            return [(day != 6), ''];
+                        }
+                    }
+                }    
+            })
+    });

@@ -109,6 +109,86 @@ h1 {
   width: 100%;
 }
 
+.ui-datepicker {
+  background: #cfcfcf !important;
+  border: 1px solid #555 !important;
+  color: #000000 !important;
+}
+
+input:focus {
+  background-color: #e28684 !important;
+  color:rgb(83, 0, 0) !important;
+}
+
+.ui-datepicker-header {
+  background: #b85654 !important;
+  border: 1px solid #000000 !important;
+  color: #000000 !important;
+  padding: 1.5px !important;
+  border-bottom-left-radius:0rem!important;
+  border-bottom-right-radius:0rem!important;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  background: #e28684 !important;
+  border: 0.5px solid #b85654 !important;
+  color: #000000 !important;
+  align-content: center !important;
+  border-radius:0.15rem!important;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #530000 !important;
+  color: #FFFFFF !important;
+}
+
+.ui-datepicker-prev {
+  float: left;
+  cursor: pointer;
+  color: #ff3733 !important;;
+}
+
+.ui-datepicker-prev:hover {
+  color: #ff3733 !important;
+}
+
+.ui-datepicker-next:hover {
+  color: #ff3733 !important;
+}
+
+.ui-datepicker-next {
+  float: right;
+  cursor: pointer;
+  background-position: center 0px;
+  color: #ff3733 !important;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #ff3733 !important;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1) !important;
+  -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1)   !important;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .1) !important;
+  color: #e0e0e0 !important;
+  text-shadow: 0px 1px 0px #ff3733 !important;
+  border: 0.5px solid #530000 !important;
+  position: relative !important;
+  margin: -1px !important;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+  background: #444444;
+  color: #ff0000;
+}
+
+.ui-datepicker th {
+  background-color:rgb(83, 0, 0);
+  text-transform: uppercase;
+  font-size: 8pt;
+  color: #ffffff;
+  /*text-shadow: 1px 0px 0px #fff;*/
+  /*filter: dropshadow(color=#fff, offx=1, offy=0);*/
+}
+
 .subtitle {
   background: #750604;
   width: 100%;
