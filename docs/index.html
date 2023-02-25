@@ -24,6 +24,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+    <script src="scripts/service.js"></script>
+    
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -395,11 +397,12 @@
                     </div>
                 </div>
             
+            </div>
             <div class="card">
                 <div class="card-header">
                     <a class="card-link" data-toggle="collapse" href="#collapsePerson">Choose Your Hairstylist</a>
                 </div>
-                <div id="collapsePerson" class="collapse show" data-parent="#accordion">
+                <div id="collapsePerson" class="collapse" data-parent="#accordion">
                     <div class="card-body">
                         <p><b>Please choose your preferred hairstylist.</b></p>
 
@@ -464,7 +467,7 @@
 
                         Phone Number
                         <div class="inputBox"> 
-                        <input type="text" id="number-answer" name="number-Answer" placeholder="457-777-8888" required="required">
+                        <input type="text" id="numberAnswer" name="numberAnswer" placeholder="(xxx)-xxx-xxxx" required="required">
                         </div>
                         
     
