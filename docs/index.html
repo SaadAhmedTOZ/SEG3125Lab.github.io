@@ -45,21 +45,24 @@
     </div>
 
     <nav class="navbar stickynav bottom-rounded navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#first"><img src="images/peigne.png" alt="logo" style="width:30px;">First</a>
+              <a class="nav-link" href="#about-us"><img src="images/peigne.png" alt="logo" style="width:30px;">About Us</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#second"><img src="images/tiger.png" alt="logo" style="width:30px;">Second</a>
+              <a class="nav-link" href="#services"><img src="images/tiger.png" alt="logo" style="width:30px;">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#third">Third</a>
-            </li>   
+                <a class="nav-link" href="#hairstylists"><img src="images/tiger.png" alt="logo" style="width:30px;">Hairstylists</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#app-booking"><img src="images/tiger.png" alt="logo" style="width:30px;">Appointment Booking</a>
+            </li>
          </ul>
         </div>  
       </nav>
@@ -76,7 +79,7 @@
     </div>
 
 
-    <div class="container-xl rounded " style="background-color: #ffffff; padding: 30px ">
+    <div class="container-xl rounded " id="about-us"style="background-color: #ffffff; padding: 30px ">
         <img class="img-salon" src="images/salon.jpg">
         <br>
         <h3>About Us</h3>
@@ -112,7 +115,7 @@
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
 
-    <div class="container-xl subtitle mt-2 rounded my-2 text-white">
+    <div class="container-xl subtitle mt-2 rounded my-2 text-white" id="services">
         <div class="title">
             <h2>Services</h2>
         <p>Services Offered</p>
@@ -290,9 +293,9 @@
     <!-- A different approach would be to make the whole staff information collapsible -->
     <!-- Here a block button (taking the full width) opens/closes the collapsible -->
     <!-- Here a single card is used, but card columns could be used -->
-    <div class="container stylists rounded">
+    <div class="container stylists rounded" id= "hairstylists">
         <a href="#mechanics" class="btn btn-style btn-lg btn-block btn-stylists rounded" data-toggle="collapse">Meet our Stylists Below <p><i class="arrow down"></i></p></a>
-        <div id="mechanics" class="collapse">
+        <div id="mechanics" class="collapse" >
             <br>
             <div class="card-columns card-center rounded bg-white p-3">
 
@@ -345,7 +348,7 @@
     <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
-    <div class="container-xl subtitle mt-2 rounded my-2 text-white">
+    <div class="container-xl subtitle mt-2 rounded my-2 text-white" id="app-booking">
         <div class="title">
             <h2>Book An Appointment With Us!</h2>
         <p>Fill out the form below</p>
@@ -394,11 +397,11 @@
             
             <div class="card">
                 <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapsePerson">Choose Your Hairdresser</a>
+                    <a class="card-link" data-toggle="collapse" href="#collapsePerson">Choose Your Hairstylist</a>
                 </div>
                 <div id="collapsePerson" class="collapse show" data-parent="#accordion">
                     <div class="card-body">
-                        <p><b>Please choose your preferred hairdresser.</b></p>
+                        <p><b>Please choose your preferred hairstylist.</b></p>
 
                         <input type="checkbox" id="person1" name="person1" value="Alex">
                         <label for="person1">Alex</label><br>
