@@ -227,7 +227,10 @@ input:focus {
 .btn-stylists {
   background-color: #740302;
 }
-/* from www.w3schools.com */
+
+
+
+/* tooltip */
 .arrow {
   border: solid #d1d1d1;;
   border-width: 0 3px 3px 0;
@@ -239,3 +242,53 @@ input:focus {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.tool {
+  width: 200px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tool::before,
+.tool::after {
+  --scale: 0;
+  --arrow-size: 20px;
+  --tooltip-color: #740320;
+
+  position: absolute;
+  top: -.25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: bottom center;
+}
+
+.tool::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background: var(--tooltip-color);
+}
+
+.tool:hover::before,
+.tool:hover::after {
+  --scale: 1;
+}
+
+.tool::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+/* end of tooltip */
