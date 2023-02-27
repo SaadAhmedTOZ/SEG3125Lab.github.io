@@ -1,7 +1,7 @@
 # SEG3125Lab
 Project for SEG3125
 
-Sources for code:Code Referenced
+Sources for code:
 
 Tooltip https://github.com/WebDevSimplified/CSS-Tooltips
 
