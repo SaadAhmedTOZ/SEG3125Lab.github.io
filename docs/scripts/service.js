@@ -29,6 +29,20 @@ $(document).ready(function(){
         }
     });
 
+    $("#ccnum-answer").on("change",function(){
+        var regEx = /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/;
+        var visa = /^4[0-9]{12}(?:[0-9]{3})?$/
+        var amex = /^3[47][0-9]{13}$/
+        
+        if(document.getElementById("ccnum-answer").value.match(regEx) || document.getElementById("ccnum-answer").value.match(visa) || document.getElementById("ccnum-answer").value.match(amex)){
+            return true;
+        }
+        else{
+            alert("Please enter a valid credit card number.");
+            return false;
+        }
+});   
+
     $( "#datepicker" ).datepicker(
            {
                beforeShowDay: function(d){
