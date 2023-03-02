@@ -1,546 +1,121 @@
-<!-- This file contains many elements adapted from the online tutoral -->
-<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
-
-<!-- Images source: -->
-<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
-<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
-
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- The head should contain an appropriate title for your site -->
-<head>
-    <title>Cherry Hair</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
-    
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    <script src="scripts/service.js"></script>
-    
-    <!-- Your own additional style sheet -->
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-</head>
-
-
-<body>
-
-    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
-    <!-- Should show the name of your company with an image or logo -->
-    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
-    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
-    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
-    <div class="container-fluid text-white">
-        <div class="title-welcome ">
-            <h1 class="display-3">Welcome to  <strong>Cherry Hair</strong></h1>
-            <p><b>&nbsp;&nbsp;&nbsp;&nbsp;Hair so good you will want to put a cherry on top!</b></p>
-        </div>
-        <img class="img" src="images/LogoRectangle.png">  
-    </div>
-
-    <nav class="navbar stickynav bottom-rounded navbar-expand-md bg-dark navbar-dark">
-        <!-- <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us"><img src="images/group-2.png" alt="logo" style="width:30px;">&nbsp&nbspAbout Us</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#services"><img src="images/hair-dryer.png" alt="logo" style="width:30px;">&nbsp&nbspServices</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#hairstylists"><img src="images/hairstylist.png" alt="logo" style="width:30px;">&nbsp&nbspHairstylists</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#app-booking"><img src="images/appointment.png" alt="logo" style="width:30px;">&nbsp&nbspAppointment Booking</a>
-            </li>
-         </ul>
-        </div>  
-      </nav>
-      <br>
-
-    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
-    <!-- These can be useful for making sure someone reads something before continuing -->
-    <div class="container">
-        <div class="alert alert-danger alert-dismissible fade show">
-            <h2>SPECIAL OFFER!</h2>
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            Use code<strong> CHERRYHAIR2023 </strong>for <strong>25%</strong> off your first appointment!
-        </div>
-    </div>
-
-
-    <div class="container-xl rounded " id="about-us"style="background-color: #ffffff; padding: 30px ">
-        <img class="img-salon" src="images/salon.jpg">
-        <br>
-        <h3>About Us</h3>
-        <p>At Cherry Hair, we believe that a great haircut can change your day. Our experienced stylists are dedicated to providing you with personalized attention and a fantastic hair-cutting experience. We use only the finest products and cutting-edge techniques to ensure that you leave our shop feeling refreshed and looking your best. Our goal is to create a welcoming and friendly environment where you can sit back, relax, and let us take care of your hair needs. Come visit us today and see why we are the go-to hair cutters for so many satisfied customers!</p>
-        <p class="text-uppercase"><strong>Location:</strong></p>
-        <p >673 Strawberry Road, Banana Town, OJ P1E 6O6 </p>
-        <p class="text-uppercase"><strong>Contact Us:</strong></p>
-        <p >123-456-7890 </p>
-        <p >CherryHair@fruits.com</p>  
-    </div>
-
-    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
-    <!-- It can be useful for placement of information -->
-    <!--<div class="row p-3">
-        <div class="col-sm-3 pl-5"> <button type="button"  class="btn btn-danger">Services</button></div>
-        <div class="col-sm-3"><button type="button"  class="btn btn-danger">Calendar</button></div>
-        <div class="col-sm-3"><button type="button"  class="btn btn-danger">Payment</button></div>
-        <div class="col-sm-3"><button type="button"  class="btn btn-danger">Find Us</button></div>
-        
-    </div> -->
-
-    <!-- When you have messages to tell, remember that center align is not always the best choice -->
-    <!-- <div class="container-xl rounded home_text about-us border p-3">
-        <h3>About Us</h3>
-        <p>At Cherry Hair, we believe that a great haircut can change your day. Our experienced stylists are dedicated to providing you with personalized attention and a fantastic hair-cutting experience. We use only the finest products and cutting-edge techniques to ensure that you leave our shop feeling refreshed and looking your best. Our goal is to create a welcoming and friendly environment where you can sit back, relax, and let us take care of your hair needs. Come visit us today and see why we are the go-to hair cutters for so many satisfied customers!</p>
-        <p class="text-uppercase"><strong>Location:</strong></p>
-        <p >673 Strawberry Road, Banana Town, OJ P1E 6O6 </p>
-        <p class="text-uppercase"><strong>Contact Us:</strong></p>
-        <p >123-456-7890 </p>
-        <p >CherryHair@fruits.com</p>
-    </div> -->
-
-    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
-    <!-- Might be (or not) useful to show some information to the user -->
-
-    <div class="container-xl subtitle mt-2 rounded my-2 text-white" id="services">
-        <div class="title">
-            <h2>Services</h2>
-        <p>Services Offered</p>
-        </div>       
-    </div>
-
-    <div class="container-xl bg-white rounded card-holder">          
-
-        <div class="container-xl bg-white rounded card-holder my-2 p-3 text-white">
-
-            <div class="card-columns">
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/Gomez.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Women's Haircut</h4>
-                        <p class="card-text">From layers to bobs, we can perfect the cut you want! Ages 15+</p>
-                        <br>
-                        <p class="text-center"><strong>$60</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px ">
-                    <img class="card-img-top" src="images/abel.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Men's Haircut</h4>
-                        <p class="card-text">With the best barbers in the world, We'll have you looking great. Ages 15+ </p>
-                        <p class="text-center"><strong>$40</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/Child.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Children's Haircut</h4>
-                        <p class="card-text">Your little ones can look good too! Ages 14 and under.</p>
-                        <br>
-                        <p class="text-center"><strong>$25</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/Swift.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Perm</h4>
-                        <p class="card-text">Come get the most luscious and bouncy curls of your dreams right here. </p>
-                        <br>
-                        <p class="text-center"><strong>$150</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/Bale.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Beard</h4>
-                        <p class="card-text">Get the thickest and sharpest looking beard out there.</p>
-                        <br>
-                        <p class="text-center"><strong>$20</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/StraightHair.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Straightening</h4>
-                        <p class="card-text">Done with those curls? Get sleek, shiny, smooth hair that lasts for days.</p>
-                        <br>
-                        <p class="text-center"><strong>$40</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/Rihanna.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Colouring</h4>
-                        <p class="card-text">For a gorgeous shiny colour, we can match it to the shade you want.</p>
-                        <br>
-                        <p class="text-center"><strong>$200</strong></p>
-                    </div>
-                </div>
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/waxing.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Waxing</h4>
-                        <p class="card-text">Tired of body hair? Smooth, hair-free skin! Pick your area. </p>
-                        <br>
-                        <p class="text-center"><strong>$30</strong></p>
-                    </div>
-                </div>
-
-
-                <div class="card card-style" style="width:250px">
-                    <img class="card-img-top" src="images/eyebrows.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Eyebrows</h4>
-                        <p class="card-text">Get those perfect eyebrows you wanted! Both threading and waxing available. </p>
-                        <br>
-                        <p class="text-center"><strong>$15</strong></p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div> 
-
-    </div>
-
-
-
-    <!-- You'll certainly need buttons at some point in your site -->
-    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
-    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
-    <!-- This idea is already part of the components in Bootstrap -->
-    <!--<div class="container">
-        <h2>Button States</h2>
-        <button type="button" class="btn btn-danger">Primary Button</button>
-        <button type="button" class="btn btn-danger active">Active Primary</button>
-        <button type="button" class="btn btn-danger" disabled>Disabled Primary</button>
-    </div> -->
-
-
-    <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
-    <!-- Modals are useful for additional information or questions -->
-    <!-- Here the modal is used for a little survey -->
-    <!--<div class="container">
-        <h2>Modal Example</h2>
-        <! -- Trigger the modal with a button -- >
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
-          
-        <! -- Modal -- >
-        <div class="modal fade" id="mySurvey" role="dialog">
-            <div class="modal-dialog">  
-            < !-- Modal content-- >
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        <h2>How did you hear about us?</h2>
-                        <p>Tell us:</p>
-                        <form>
-                          <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 1</label>
-                          </div>
-                          <div class="checkbox">
-                            <label><input type="checkbox" value="">Option 2</label>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>     
-        </div>
-        </div>    
-    </div> 
-    -->
-
-    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
-    <!-- Card columns allows multiple cards next to each other -->
-    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
-    <!-- My second card limits the information seen and uses collapsible to show more -->
-    <!--<div class="container p-3">
-        <h2>Meet our hairdressers</h2>
-
-        <div class="card-columns">
-            <div class="card bg-danger" style="width:200px">
-                <img class="card-img-top" src="images/Jule.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">Jules</h4>
-                    <p class="card-text">Jules has been cutting hair for 10 years.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-            </div>
-        </div>
-
-
-    </div> -->
-
-    <!-- A different approach would be to make the whole staff information collapsible -->
-    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
-    <!-- Here a single card is used, but card columns could be used -->
-    <div class="container stylists rounded" id= "hairstylists">
-        <a href="#mechanics" class="btn btn-style btn-lg btn-block btn-stylists rounded" data-toggle="collapse">Meet our Stylists Below <p><i class="arrow down"></i></p></a>
-        <div id="mechanics" class="collapse" >
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href='style.css'/>
+        <title>SEG3125 Twitter UI Survey</title>
+    </head>
+    <body>
+        <h1>UI Survey</h1>
+            <h2>Twitter</h2>
             <br>
-            <div class="card-columns card-center rounded bg-white p-5">
+            <p>What do you think of the UI (User Interface) of this <a href="https://twitter.com" target="_blank">Twitter</a> site?</p>
+            <br>
 
-                <div class="card card-style text-white" style="width:250px">
-                    <img class="card-img-top" src="images/barber1.jpeg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Alex</h4>
-                        <p class="card-text">Alex has been cutting hair for 10 years. He's had experience with styling all lengths and textures of hair for all types of individuals. <br> <br><strong>Available:</strong><br> Monday - Saturday</p>
-                        <!-- collapsible part -->
-                        <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See Specialities</a>
-                        <div id="profile1" class="collapse p-3">
-                            <p>Haircuts, Perm, Waxing and Beards </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card-style text-white" style="width:250px">
-                    <img class="card-img-top" src="images/barber2.jpeg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Jules</h4>
-                        <p class="card-text">Jules has been with Cherry Hair for 3 years. She loves providing clients with a new cut that makes them feel refreshed. <br> <br><strong>Available:</strong> <br> Friday - Wednesday</p>
-                        <!-- collapsible part -->
-                        <a href="#profile2" class="btn btn-primary" data-toggle="collapse">See Specialities</a>
-                        <div id="profile2" class="collapse p-3">
-                            <p>Haircuts, Eyebrows, and Waxing </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card-style text-white" style="width:250px">
-                    <img class="card-img-top" src="images/barber3.jpeg" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Pia</h4>
-                        <p class="card-text">Pia is our newest stylist, but she definitely has several years of cutting, colour and styling hair under her belt. <br> <br> <br> <strong>Available:</strong> <br> Sunday - Friday</p>
-                        <!-- collapsible part -->
-                        <a href="#profile3" class="btn btn-primary button-baby" data-toggle="collapse">See Specialities</a>
-                        <div id="profile3" class="collapse p-3">
-                            <p>Haircuts, Colouring, Waxing</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <br>
-    </div> 
-
-    <!-- Collapsible with multiple items - accordion -->
-    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
-    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
-    <!-- could work well.  You can use other patterns too.  This is just an example. -->
-    <div class="container-xl subtitle mt-2 rounded my-2 text-white" id="app-booking">
-        <div class="title">
-            <h2>Book An Appointment With Us!</h2>
-        <p>Fill out the form below</p>
-        </div>       
-    </div>
-
-    <div class="container-xl rounded form">
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose Your Desired Services</a>
-                </div>
-                <div id="collapseService" class="collapse show" data-parent="#accordion">
-                    <div class="card-body">
-                        <p><b>Our Offered Services</b></p>
-
-                        <input type="checkbox" id="serv1" name="serv1" value="WomensHaircut">
-                        <label for="serv1"> Women's Haircut $60</label><br>
-
-                        <input type="checkbox" id="serv2" name="serv2" value="MensHaircut">
-                        <label for="serv2"> Men's Haircut $40</label><br>
-
-                        <input type="checkbox" id="serv3" name="serv3" value="ChildrensHaircut">
-                        <label for="serv3"> Children's Haircut $25</label><br>
-
-                        <input type="checkbox" id="serv4" name="serv4" value="Perm">
-                        <label for="serv4"> Perm $150</label><br>
-
-                        <input type="checkbox" id="serv5" name="serv5" value="Beard">
-                        <label for="serv5"> Beard $20</label><br>
-
-                        <input type="checkbox" id="serv6" name="serv6" value="Straightening">
-                        <label for="serv6"> Straightening $40</label><br>
-                        
-                        <input type="checkbox" id="serv7" name="serv7" value="Coloring">
-                        <label for="serv7"> Coloring $200</label><br>
-
-                        <input type="checkbox" id="serv8" name="serv8" value="Waxing">
-                        <label for="serv8"> Waxing $30</label><br>
-
-                        <input type="checkbox" id="serv9" name="serv9" value="Eyebrows">
-                        <label for="serv9"> Eyebrows $15</label><br>
-
-                    </div>
-                </div>
-            
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a class="card-link" data-toggle="collapse" href="#collapsePerson">Choose Your Hairstylist</a>
-                </div>
-                <div id="collapsePerson" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p><b>Please choose your preferred hairstylist.</b></p>
-
-                        <input type="radio" id="person1" name="stylists" value="Alex">
-                        <label for="person1">Alex</label><br>
-
-                        <input type="radio" id="person2" name="stylists" value="Jules">
-                        <label for="person2">Jules</label><br>
-
-                        <input type="radio" id="person3" name="stylists" value="Pia">
-                        <label for="person3">Pia</label><br>
-
-                        <input type="radio" id="none" name="stylists" value="None">
-                        <label for="none">None</label><br>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a Date</a>
-                </div>
-                <div id="collapseDate" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p><b>Please choose your desired appointment date and time.</b></p>
-                        <!-- Bootstrap has various input components. Some examples are given here: -->
-                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
-                        <div class="form-group row">
-                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
-                            <div class="col-10">
-                                <input type="text" id="datepicker">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your Information</a>
-                </div>
-                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p><b>Please fill in your information.</b></p>
-
-                        Name 
-                        <div class="inputBox"> 
-                        <input type="text" id="name-answer" name="name-Answer" placeholder="Gilbert" required="required">
-                        </div>
-                        
-                        <br>
-
-                        Email
-                        <div class="inputBox"> 
-                        <input type="text" id="email-answer" name="email-Answer" placeholder="GilbertMike@fruits.com" required="required">
-                        </div>
-                        
-                        <br>
-                    
-                        Age
-                        <div class="inputBox"> 
-                        <input type="text" id="age-answer" name="age-Answer" placeholder="45" required="required">
-                        </div>
-                        
-                        <br>
-
-                        Phone Number
-                        <div class="inputBox"> 
-                        <input type="tel" id="numberAnswer" name="numberAnswer" placeholder="(xxx)-xxx-xxxx" required="required">
-                        </div>
-
+		<br>
+			<a href="https://twitter.com"target="_blank">
+				<table class="center">
+					<tr>
+						<td>
+							<img src='src\TwitterSC.png'alt="Timeline"style="width:500px;height:410px;">  
+						</td>
+						<td>
+							<img src='src\TwitterSC2.png'alt="Trending"style="width:500px;height:410px;"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src='src\TwitterSC3.png'alt="For You"style="width:500px;height:410px;">  
+						</td>
+						<td>
+							<img src='src\TwitterSC4.png'alt="Settings"style="width:500px;height:410px;"> 
+						</td>
+					</tr>
+				</table>
+			</a>
+		
+		<div>
+			<h3>Colour</h3>
+				<p>What do you think of the usage of baby blue in this page?</p>
+					<input type="radio" id="ILikeIt" name="baby blue" value="ILikeIt">
+						<label for="ILikeIt!"><span>I Like it!</span></label>
+					<input type="radio" id="NotAFan" name="baby blue" value="NotAFan">
+						<label for="ItOffendsMyEyes"><span>Not a Fan!</span></label>
+				<br>
+				<p>What possible other colours would you prefer?</p>
+					<select name="Colours" id="Colours">
+						<option value="0">Fire Orange</option>
+						<option value="1">Lamborghini Yellow</option>
+						<option value="2">British Racing Green</option>
+						<option value="3">Beige</option>
+						<option value="4+">Baby Blue</option>
+					</select>
+				<br>
+				<p>Do you like Twitter in dark mode?</p>
+					<input type="radio" id="Yes" name="dark" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="dark" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+		</div>
+		<div>
+			<h3>Layout</h3>
+				<p>What do you think of the layout? (Select all that apply)</p>
+					<input type="checkbox" id="option1" name="option1" value="option1">
+						<label for="option1"> The Layout is clean</label>
+					<input type="checkbox" id="option2" name="option1" value="option1">
+						<label for="option2"> The Layout is intuitive</label>
+					<input type="checkbox" id="option3" name="option1" value="option1">
+						<label for="option3"> The Layout is aesthetically appealing</label>
+					<input type="checkbox" id="option4" name="option1" value="option1">
+						<label for="option4"> The Layout needs restructuring</label>
+				<br>
+				<br>
+				<p>Would you use the "Trending" page and "For You" pages?</p>
+					<input type="radio" id="Yes" name="trending" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="trending" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+		</div>
+		<div>
+			<h3>General</h3>
+				<p>What is the first word that comes to mind when you look at this website?</p>
+				<div class="inputBox">
+					<input type="text" id="text-answer" name="Text-Answer" placeholder="Awesome!?" required="required">
+				</div>
+				<br>
+				<p>Please brifely explain how this website makes you feel?</p>
+				<textarea id="textbox" name="Text Box" rows="6" cols="75">
+				</textarea>
+				<br>
+					<p>Would you use this website?</p>
+					<input type="radio" id="Yes" name="Usability" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="Usability" value="No">
+						<label for="No">No</label>
+				<br>
+					<p>Do you think settings options are overwhelming?</p>
+					<input type="radio" id="Yes" name="settings" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="settings" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+					<input type="submit", value="Submit">
+				<br>
+				<br>
+				<i>This webpage was designed by Saad, Sheena, and Kareem.</i>
+		</div>	
+			
     
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseCardInfo">Payment Information</a>
-                </div>
-                <div id="collapseCardInfo" class="collapse" data-parent="#accordion">
-                    <div class="card-body">
-                        <p><b>Please fill in your credit card information.</b></p>
-
-                        <div class = "tool" data-tooltip= "There is a 25% cancelation fee on cancelation within 6 hours of appointment.">
-                            Card Holder Name
-                            <div class="inputBox"> 
-                            <input type="text" id="name-answer" name="name-Answer" required="required">
-                            </div>
-                        </div>
-
-                        
-                        <br>
-
-                        Credit Card Number
-                        <div class="inputBox"> 
-                        <input type="text" id="ccnum-answer" name="ccnum-Answer" required="required">
-                        </div>
-                        
-                        <br>
-                    
-                        Expiry Date
-                        <div class="inputBox"> 
-                        <input type="text" id="ccdate-answer" name="ccdate-Answer" placeholder="MM/YY" required="required">
-                        </div>
-                        
-                        <br>
-
-                        CVV
-                        <div class="inputBox"> 
-                        <input type="text" id="cvv-answer" name="cvv-Answer" required="required">
-                        </div>
-
-                        <br>
-                        <br>
-
-                        Coupon Code
-                        <div class="inputBox"> 
-                        <input type="text" id="coupon-answer" name="coupon-Answer">
-                        </div>
-                        
-                        <br>
-                        <div>
-                        <input type="submit" onclick="return alert('Your appointment has been booked. Thank you!')" title="There is a 25% cancelation fee on cancelation within 6 hours of appointment." />
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
+    </body>
 </html>
