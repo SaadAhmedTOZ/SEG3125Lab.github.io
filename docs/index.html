@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href='style.css'/>
+        <title>SEG3125 Twitter UI Survey</title>
+    </head>
+    <body>
+        <h1>UI Survey</h1>
+            <h2>Twitter</h2>
+            <br>
+            <h2>What do you think of the UI (User Interface) of this <a href="https://twitter.com" target="_blank">Twitter</a> site?</h2>
+            <br>
+
+		<br>
+			<a href="https://twitter.com"target="_blank">
+				<table>
+					<tr>
+						<td>
+							<img src='src\TwitterSC.png'alt="Timeline"style="width:500px;height:410px;">  
+						</td>
+						<td>
+							<img src='src\TwitterSC2.png'alt="Trending"style="width:500px;height:410px;"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src='src\TwitterSC3.png'alt="For You"style="width:500px;height:410px;">  
+						</td>
+						<td>
+							<img src='src\TwitterSC4.png'alt="Settings"style="width:500px;height:410px;"> 
+						</td>
+					</tr>
+				</table>
+			</a>
+		
+		<div>
+			<h3>Colour</h3>
+				<p>What do you think of the usage of baby blue in this page?</p>
+					<input type="radio" id="ILikeIt" name="baby blue" value="ILikeIt">
+						<label for="ILikeIt!"><span>I Like it!</span></label>
+					<input type="radio" id="NotAFan" name="baby blue" value="NotAFan">
+						<label for="ItOffendsMyEyes"><span>Not a Fan!</span></label>
+				<br>
+				<p>What possible other colours would you prefer?</p>
+					<select name="Colours" id="Colours">
+						<option value="0">Fire Orange</option>
+						<option value="1">Lamborghini Yellow</option>
+						<option value="2">British Racing Green</option>
+						<option value="3">Beige</option>
+						<option value="4+">Baby Blue</option>
+					</select>
+				<br>
+				<p>Do you like Twitter in dark mode?</p>
+					<input type="radio" id="Yes" name="dark" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="dark" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+		</div>
+		<div>
+			<h3>Layout</h3>
+				<p>What do you think of the layout? (Select all that apply)</p>
+					<input type="checkbox" id="option1" name="option1" value="option1">
+						<label for="option1"> The Layout is clean</label>
+					<input type="checkbox" id="option2" name="option2" value="option2">
+						<label for="option2"> The Layout is intuitive</label>
+					<input type="checkbox" id="option3" name="option3" value="option3">
+						<label for="option3"> The Layout is aesthetically appealing</label>
+					<input type="checkbox" id="option4" name="option4" value="option4">
+						<label for="option4"> The Layout needs restructuring</label>
+				<br>
+				<br>
+				<p>Would you use the "Trending" page and "For You" pages?</p>
+					<input type="radio" id="Yes" name="trending" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="trending" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+		</div>
+		<div>
+			<h3>General</h3>
+				<p>What is the first word that comes to mind when you look at this website?</p>
+				<div class="inputBox">
+					<input type="text" id="text-answer" name="Text-Answer" placeholder="Awesome!?" required="required">
+				</div>
+				<br>
+				<p>Please brifely explain how this website makes you feel?</p>
+				<textarea id="textbox" name="Text Box" rows="6" cols="75">
+				</textarea>
+				<br>
+					<p>Would you use this website?</p>
+					<input type="radio" id="Yes" name="Usability" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="Usability" value="No">
+						<label for="No">No</label>
+				<br>
+					<p>Do you think settings options are overwhelming?</p>
+					<input type="radio" id="Yes" name="settings" value="Yes">
+						<label for="Yes">Yes</label>
+					<input type="radio" id="No" name="settings" value="No">
+						<label for="No">No</label>
+				<br>
+				<br>
+					<input type="submit", value="Submit">
+				<br>
+				<br>
+				<i>This webpage was designed by Saad, Sheena, and Kareem.</i>
+		</div>	
+			
+    
+    </body>
+</html>
