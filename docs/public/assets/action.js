@@ -3,14 +3,16 @@ $(document).ready(function(){
 
   $('form').on('submit', function(){
       
-      // var item = $('form input');
-      // console.log(item.serializeArray());
+      var item = $('form input');
+      console.log(item.serializeArray());
+      console.log(item);
 
       $.ajax({
         type: 'POST',
-        url: '/index',
+        url: '/niceSurvey',
         data: $(this).serializeArray(),
         success: function(data){
+          
           // do something with the data via front-end framework
           // Make the submit button red, disabled and saying Thank you
           $("#bb").css("background-color", "red");
