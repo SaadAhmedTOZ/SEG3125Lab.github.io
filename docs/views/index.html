@@ -8,7 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href='./style.css'/>
+		<script src="../public/assets/action.js"></script>
+        <link rel="stylesheet" href='style.css'/>
+
         <title>SEG3125 Twitter UI Survey</title>
     </head>
     <body>
@@ -41,20 +43,21 @@
 			</a>
 		
 		<div>
+			<form method="post">
 			<h3>Colour</h3>
 				<p>What do you think of the usage of baby blue in this page?</p>
-					<input type="radio" id="ILikeIt" name="baby blue" value="ILikeIt">
+					<input type="radio" id="ILikeIt" name="color" value="ILikeIt">
 						<label for="ILikeIt!"><span>I Like it!</span></label>
-					<input type="radio" id="NotAFan" name="baby blue" value="NotAFan">
+					<input type="radio" id="NotAFan" name="color" value="NotAFan">
 						<label for="ItOffendsMyEyes"><span>Not a Fan!</span></label>
 				<br>
 				<p>What possible other colours would you prefer?</p>
-					<select name="Colours" id="Colours">
-						<option value="0">Fire Orange</option>
-						<option value="1">Lamborghini Yellow</option>
-						<option value="2">British Racing Green</option>
-						<option value="3">Beige</option>
-						<option value="4+">Baby Blue</option>
+					<select name="othercolors" id="Colours">
+						<option value="Fire Orange">Fire Orange</option>
+						<option value="Lamborghini Yellow">Lamborghini Yellow</option>
+						<option value="British Racing Green">British Racing Green</option>
+						<option value="Beige">Beige</option>
+						<option value="Baby Blue">Baby Blue</option>
 					</select>
 				<br>
 				<p>Do you like Twitter in dark mode?</p>
@@ -68,14 +71,10 @@
 		<div>
 			<h3>Layout</h3>
 				<p>What do you think of the layout? (Select all that apply)</p>
-					<input type="checkbox" id="option1" name="option1" value="option1">
-						<label for="option1"> The Layout is clean</label>
-					<input type="checkbox" id="option2" name="option1" value="option1">
-						<label for="option2"> The Layout is intuitive</label>
-					<input type="checkbox" id="option3" name="option1" value="option1">
-						<label for="option3"> The Layout is aesthetically appealing</label>
-					<input type="checkbox" id="option4" name="option1" value="option1">
-						<label for="option4"> The Layout needs restructuring</label>
+					<input type="checkbox" name="layout" value="The Layout is clean"> The Layout is clean
+		  			<input type="checkbox" name="layout" value="The Layout is intuitive"> The Layout is intuitive
+      				<input type="checkbox" name="layout" value="The Layout is aesthetically appealing"> The Layout is aesthetically appealing
+					<input type="checkbox" name="layout" value="The Layout needs restructuring"> The Layout needs restructuring
 				<br>
 				<br>
 				<p>Would you use the "Trending" page and "For You" pages?</p>
@@ -90,17 +89,14 @@
 			<h3>General</h3>
 				<p>What is the first word that comes to mind when you look at this website?</p>
 				<div class="inputBox">
-					<input type="text" id="text-answer" name="Text-Answer" placeholder="Awesome!?" required="required">
+					<input type="text" id="text-answer" name="firstword" placeholder="Awesome!?" required="required">
 				</div>
 				<br>
-				<p>Please brifely explain how this website makes you feel?</p>
-				<textarea id="textbox" name="Text Box" rows="6" cols="75">
-				</textarea>
 				<br>
 					<p>Would you use this website?</p>
-					<input type="radio" id="Yes" name="Usability" value="Yes">
+					<input type="radio" id="Yes" name="usability" value="Yes">
 						<label for="Yes">Yes</label>
-					<input type="radio" id="No" name="Usability" value="No">
+					<input type="radio" id="No" name="usability" value="No">
 						<label for="No">No</label>
 				<br>
 					<p>Do you think settings options are overwhelming?</p>
@@ -110,12 +106,12 @@
 						<label for="No">No</label>
 				<br>
 				<br>
-					<input type="submit", value="Submit">
+				<button type="submit">Submit</button>
 				<br>
 				<br>
 				<i>This webpage was designed by Saad, Sheena, and Kareem.</i>
-		</div>	
-			
-    
+			</form>
+		</div>
+
     </body>
 </html>
