@@ -8,8 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href='./style.css'/>
 		<script src="../public/assets/action.js"></script>
+        <link rel="stylesheet" href='style.css'/>
+
         <title>SEG3125 Twitter UI Survey</title>
     </head>
     <body>
@@ -41,8 +42,8 @@
 				</table>
 			</a>
 		
-	<div>
-		<form>
+		<div>
+			<form method="post">
 			<h3>Colour</h3>
 				<p>What do you think of the usage of baby blue in this page?</p>
 					<input type="radio" id="ILikeIt" name="color" value="ILikeIt">
@@ -66,16 +67,14 @@
 						<label for="No">No</label>
 				<br>
 				<br>
+		</div>
+		<div>
 			<h3>Layout</h3>
 				<p>What do you think of the layout? (Select all that apply)</p>
-					<input type="checkbox" id="option1" name="layout" value="The Layout is clean">
-						<label for="option1"> The Layout is clean</label>
-					<input type="checkbox" id="option2" name="layout" value="The Layout is intuitive">
-						<label for="option2"> The Layout is intuitive</label>
-					<input type="checkbox" id="option3" name="layout" value="The Layout is aesthetically appealing">
-						<label for="option3"> The Layout is aesthetically appealing</label>
-					<input type="checkbox" id="option4" name="layout" value="The Layout needs restructuring">
-						<label for="option4"> The Layout needs restructuring</label>
+					<input type="checkbox" name="layout" value="The Layout is clean"> The Layout is clean
+		  			<input type="checkbox" name="layout" value="The Layout is intuitive"> The Layout is intuitive
+      				<input type="checkbox" name="layout" value="The Layout is aesthetically appealing"> The Layout is aesthetically appealing
+					<input type="checkbox" name="layout" value="The Layout needs restructuring"> The Layout needs restructuring
 				<br>
 				<br>
 				<p>Would you use the "Trending" page and "For You" pages?</p>
@@ -85,15 +84,14 @@
 						<label for="No">No</label>
 				<br>
 				<br>
+		</div>
+		<div>
 			<h3>General</h3>
 				<p>What is the first word that comes to mind when you look at this website?</p>
 				<div class="inputBox">
 					<input type="text" id="text-answer" name="firstword" placeholder="Awesome!?" required="required">
 				</div>
 				<br>
-				<p>Please brifely explain how this website makes you feel?</p>
-				<textarea id="textbox" name="Text Box" rows="6" cols="75">
-				</textarea>
 				<br>
 					<p>Would you use this website?</p>
 					<input type="radio" id="Yes" name="usability" value="Yes">
@@ -108,12 +106,12 @@
 						<label for="No">No</label>
 				<br>
 				<br>
-				<button type="submit" value="Submit" method="post">Submit</button>
+				<button type="submit">Submit</button>
 				<br>
 				<br>
 				<i>This webpage was designed by Saad, Sheena, and Kareem.</i>
-		</form>
-	</div>
-		
+			</form>
+		</div>
+
     </body>
 </html>

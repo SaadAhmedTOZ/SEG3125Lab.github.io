@@ -5,11 +5,11 @@ $(document).ready(function(){
       
       var item = $('form input');
       console.log(item.serializeArray());
-      console.log(item);
+     
 
       $.ajax({
         type: 'POST',
-        url: '/niceSurvey',
+        url: '/index',
         data: $(this).serializeArray(),
         success: function(data){
           

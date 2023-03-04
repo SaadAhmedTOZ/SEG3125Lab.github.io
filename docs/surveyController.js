@@ -78,10 +78,11 @@ module.exports = function(app){
                 combineCounts(key, json[key]);
             }
         }
-        
         // mystery line... (if I take it out, the SUBMIT button does change)
         // if anyone can figure this out, let me know!
-        res.sendFile(__dirname,'/views/index.html');
+        
+        res.sendFile(__dirname+'/views/index.html');
+        
         
     });
     
