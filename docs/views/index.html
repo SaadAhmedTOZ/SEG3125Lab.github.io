@@ -36,18 +36,17 @@
 		<!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
 		<!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
 		<div class="container-fluid text-blue">
-			<div class="title-welcome ">
+			<div class="title-welcome">
 				<h2 class="display-1"> <strong>Twitter UI Survey</strong> </h2>
 				
 			</div>
 		</div>
 			<br>
             <p>What do you think of the UI (User Interface) of this <a href="https://twitter.com" target="_blank">Twitter</a> site?</p>
-            <br>
 
 		<br>
 			<a href="https://twitter.com"target="_blank">
-				<table class="center">
+				<table >
 					<tr>
 						<td>
 							<img src='src\TwitterSC.png'alt="Timeline"style="width:500px;height:410px;">  
@@ -69,12 +68,13 @@
 		<br>
 		<div>
 			<form method="post">
-			<h3>Colour</h3>
+			<h3> <strong>Colour</strong></h3>
 				<p>What do you think of the usage of baby blue in this page?</p>
 					<input type="radio" id="ILikeIt" name="color" value="ILikeIt">
 						<label for="ILikeIt!"><span>I Like it!</span></label>
 					<input type="radio" id="NotAFan" name="color" value="NotAFan">
 						<label for="ItOffendsMyEyes"><span>Not a Fan!</span></label>
+				<br>
 				<br>
 				<p>What possible other colours would you prefer?</p>
 					<select name="othercolors" id="Colours">
@@ -85,6 +85,7 @@
 						<option value="Baby Blue">Baby Blue</option>
 					</select>
 				<br>
+				<br>
 				<p>Do you like Twitter in dark mode?</p>
 					<input type="radio" id="Yes" name="dark" value="Yes">
 						<label for="Yes">Yes</label>
@@ -94,7 +95,7 @@
 				<br>
 		</div>
 		<div>
-			<h3>Layout</h3>
+			<h3> <strong>Layout</strong></h3>
 				<p>What do you think of the layout? (Select all that apply)</p>
 					<input type="checkbox" name="layout" value="The Layout is clean"> The Layout is clean
 		  			<input type="checkbox" name="layout" value="The Layout is intuitive"> The Layout is intuitive
@@ -111,18 +112,18 @@
 				<br>
 		</div>
 		<div>
-			<h3>General</h3>
+			<h3> <strong>General</strong></h3>
 				<p>What is the first word that comes to mind when you look at this website?</p>
 				<div class="inputBox">
 					<input type="text" id="text-answer" name="firstword" placeholder="Awesome!?" required="required">
 				</div>
-				<br>
 				<br>
 					<p>Would you use this website?</p>
 					<input type="radio" id="Yes" name="usability" value="Yes">
 						<label for="Yes">Yes</label>
 					<input type="radio" id="No" name="usability" value="No">
 						<label for="No">No</label>
+				<br>
 				<br>
 					<p>Do you think settings options are overwhelming?</p>
 					<input type="radio" id="Yes" name="settings" value="Yes">
