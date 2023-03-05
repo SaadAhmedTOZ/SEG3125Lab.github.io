@@ -2,6 +2,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+
+		<!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
+		
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+		<script src="scripts/service.js"></script>
+
+
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
@@ -14,9 +29,19 @@
         <title>SEG3125 Twitter UI Survey</title>
     </head>
     <body>
-        <h1>UI Survey</h1>
-            <h2>Twitter</h2>
-            <br>
+		<br>
+		<!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+		<!-- Should show the name of your company with an image or logo -->
+		<!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+		<!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+		<!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+		<div class="container-fluid text-blue">
+			<div class="title-welcome ">
+				<h2 class="display-1"> <strong>Twitter UI Survey</strong> </h2>
+				
+			</div>
+		</div>
+			<br>
             <p>What do you think of the UI (User Interface) of this <a href="https://twitter.com" target="_blank">Twitter</a> site?</p>
             <br>
 
@@ -41,7 +66,7 @@
 					</tr>
 				</table>
 			</a>
-		
+		<br>
 		<div>
 			<form method="post">
 			<h3>Colour</h3>
@@ -106,10 +131,10 @@
 						<label for="No">No</label>
 				<br>
 				<br>
-				<button type="submit">Submit</button>
+				<button type="submit" onclick="return alert('Your response has been recorded. Thank you!')" class="btn btn-primary">Submit</button>
 				<br>
 				<br>
-				<i>This webpage was designed by Saad, Sheena, and Kareem.</i>
+				<i>This webpage was designed by Saad, Sheena, Murray and Kareem.</i>
 			</form>
 		</div>
 
