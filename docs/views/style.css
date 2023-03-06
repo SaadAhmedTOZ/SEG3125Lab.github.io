@@ -90,7 +90,7 @@ input[type='radio']{
     margin-bottom: 16px;
 }
 
-input[type='radio']:after {
+/* input[type='radio']:after {
     width: 10px;
     height: 10px;
     border-radius: 15px;
@@ -112,7 +112,7 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-}
+} */
 
 label {
     font-family: 'Inter', sans-serif;
@@ -123,7 +123,7 @@ input[type='checkbox']{
     font-family: 'Inter', sans-serif;
 }
 
-input[type='checkbox']:after {
+/* input[type='checkbox']:after {
     font-family: 'Inter', sans-serif;
     width: 10px;
     height: 10px;
@@ -147,7 +147,7 @@ input[type='checkbox']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
-}
+} */
   
 input[type='submit']{
     margin-top: 25px;
