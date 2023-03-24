@@ -3,7 +3,8 @@ function Events() {
   return (
       <div class="events">
         
-        test
+        <h1> test </h1>
+        
 
       </div>
 

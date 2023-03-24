@@ -5,7 +5,7 @@ function Join() {
         
         <img src="images/uottawa.png" class="logo"></img>
         <div class = "button">
-		    <a href ="#" class = "btn" >General Member Registeration</a>
+		    <a href ="/register" class = "btn" >General Member Registeration</a>
         </div>
 
       </div>
