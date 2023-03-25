@@ -1,7 +1,7 @@
 .box {
     border: 10px solid white;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     background: white;
     width: 700px;
@@ -16,3 +16,36 @@
     margin-top: 8%;
 
   }
+
+.head {
+  text-align: left;
+  margin-left: 32px;
+}
+
+.arrow {
+
+  width: 13%;
+  margin-top: 2%;
+  margin-left: 515px;
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+
+}
+
+.arrow:hover, .arrow:focus, .arrow:active{
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+.input input {
+    width: 90%;
+    height: 70px;
+    background: #D9D9D9;
+    border: #D9D9D9;
+
+}
