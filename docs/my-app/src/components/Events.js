@@ -16,45 +16,61 @@ function Events() {
         <p>Join us for our first ever Hackathon! We will be hosting a 24 hour hackathon where you can work with your friends to create a project that you are passionate about. We will be providing food, drinks, and prizes for the top 3 teams. </p>
       </div>
     </td>
-    <td><div>
-        <img src="images/3155ReviewSession.png" class ="logo-events"></img>
-        <p class="head-events">CEG3155 Review Session</p>
+    <td><div class="eventblur">
+        <img src="images/3155ReviewSession.png"></img>
+        <h2>CEG3155 Review Session</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
       </div></td>
-    <td><div>
-        <img src="images/meettheexecs.png" class ="logo-events"></img>
-        <p class="head-events">Meet the Execs Event</p>
-      </div></td>
-  </tr>
-  <tr>
-  <td>
-      <div>
-        <img src="images/hackthehill.png" class ="logo-events"></img>
-        <p class="head-events">Hack the Hill Hackathon</p>
-      </div>
-    </td>
-    <td><div>
-        <img src="images/3155ReviewSession.png" class ="logo-events"></img>
-        <p class="head-events">CEG3155 Review Session</p>
-      </div></td>
-    <td><div>
-        <img src="images/meettheexecs.png" class ="logo-events"></img>
-        <p class="head-events">Meet the Execs Event</p>
+    <td><div class="eventblur">
+        <img src="images/meettheexecs.png"></img>
+        <h2>Meet the Execs Event</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
       </div></td>
   </tr>
   <tr>
   <td>
-      <div>
-        <img src="images/hackthehill.png" class ="logo-events"></img>
-        <p class="head-events">Hack the Hill Hackathon</p>
+      <div class="eventblur">
+        <img src="images/hackthehill.png"></img>
+        <h2>Hack the Hill Hackathon</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
       </div>
     </td>
-    <td><div>
-        <img src="images/3155ReviewSession.png" class ="logo-events"></img>
-        <p class="head-events">CEG3155 Review Session</p>
+    <td><div class="eventblur">
+        <img src="images/3155ReviewSession.png"></img>
+        <h2>CEG3155 Review Session</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
       </div></td>
-    <td><div>
-        <img src="images/meettheexecs.png" class ="logo-events"></img>
-        <p class="head-events">Meet the Execs Event</p>
+    <td><div class="eventblur">
+        <img src="images/meettheexecs.png"></img>
+        <h2>Meet the Execs Event</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
+      </div></td>
+  </tr>
+  <tr>
+  <td>
+      <div class="eventblur">
+        <img src="images/hackthehill.png"></img>
+        <h2>Hack the Hill Hackathon</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
+      </div>
+    </td>
+    <td><div class="eventblur">
+        <img src="images/3155ReviewSession.png"></img>
+        <h2>CEG3155 Review Session</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
+      </div></td>
+    <td><div class="eventblur">
+        <img src="images/meettheexecs.png"></img>
+        <h2>Meet the Execs Event</h2>
+        <h3>Feb 15th 2023</h3>
+        <p>If you need help prepping for the CEG3155 final...!dsafla</p>
       </div></td>
   </tr>
 </table>
