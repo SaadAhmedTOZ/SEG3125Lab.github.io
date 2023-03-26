@@ -3,7 +3,7 @@ function Faq() {
   return (
       <div class= "faq">
 
-        <p class = "h">Welcome to the Frequently Asked Questions <strong>(FAQ)</strong> page of the Computer Engineering Club! Here you will find answers to some of the most commonly asked questions about our club.</p>
+        <h1>Welcome to the Frequently Asked Questions <strong>(FAQ)</strong> page of the Computer Engineering Club! Here you will find answers to some of the most commonly asked questions about our club.</h1>
         <br />
         <p class="q">What is the Computer Engineering Club?</p>
         <p>The Computer Engineering Club is a student-led organization dedicated to fostering interest and learning in computer engineering. Our club provides a community for students to connect, learn, and engage with others who share their passion for computer engineering.</p>
