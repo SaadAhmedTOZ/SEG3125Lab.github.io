@@ -4,7 +4,7 @@ table {
     align-items: center;
     margin-left: auto !important;
     margin-right: auto !important;
-    border-spacing: 0 75px !important;
+    border-spacing: 15px 20px !important;
   }
 
 td{
@@ -25,12 +25,13 @@ th{
     height: fit-content !important;
   }
 
-.center-events {
+.center-courses {
     width: 95%;
     margin: auto !important;
+    border: 30px solid black !important;
 }
 
-.logo-events {
+.logo-courses {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,15 +39,16 @@ th{
     margin-top: 2%;
   }
 
-.head-events{
+.head-courses{
     width: fit-content;
     text-align: center;
+    align-items: center;
     margin: auto;
     color: white;
     font-weight: bold;
 }
 
-.title-events{
+.title-courses{
     width: fit-content;
     text-align: center;
     margin-top: 2%;
@@ -56,7 +58,43 @@ th{
     font-weight: bold;
 }
 
-.event{
+.event-courses{
     width: 500px !important;
     height: 500px !important;
+}
+
+.course-1{
+  display: table-cell;
+  background-color: rgb(39, 170, 126);
+  color: white;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  height: 350px;
+  width: 500px;
+  white-space: pre-wrap;
+}
+
+.course-2{
+  display: table-cell;
+  background-color: rgb(148, 102, 167);
+  color: white;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  height: 350px;
+  width: 500px;
+  white-space: pre-wrap;
+}
+
+.course-3{
+  display: table-cell;
+  background-color: rgb(28, 162, 214);
+  color: white;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  height: 350px;
+  width: 500px;
+  white-space: pre-wrap;
 }
