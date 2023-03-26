@@ -5,6 +5,7 @@ import "./App.css";
 import Join from "./components/Join";
 import Register from "./components/Register";
 import Events from "./components/Events";
+import About from "./components/About";
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -28,7 +29,7 @@ export default function App()  {
       break  
 
     case "/about":
-      //component = < About/>
+      component = < About/>
       break  
 
     case "/faq":
