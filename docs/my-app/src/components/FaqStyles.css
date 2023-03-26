@@ -1,0 +1,19 @@
+.faq {
+    margin-top: 3%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+.q{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.h{
+    font-size: 25px;
+    text-align: center;
+
+}
