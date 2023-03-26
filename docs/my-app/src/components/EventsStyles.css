@@ -60,3 +60,52 @@ th{
     width: 500px !important;
     height: 500px !important;
 }
+
+.eventblur{
+    height:auto!important;
+    display:inline-block!important;
+    position:relative!important;
+    transition:.3s!important;
+    margin:4px!important;
+  }
+  
+  .eventblur img{
+    width:100%!important;
+    height:100%!important;
+    transition:.3s!important;
+    border-radius:4px!important;
+  }
+  
+  .eventblur:hover img{
+    filter:blur(2px) brightness(60%)!important;
+  }
+   
+  .eventblur :not(img){
+    position:absolute!important;
+    z-index:1!important;
+    top:30%;
+    width:100%!important;
+    text-align:center;
+    color:#fff!important;
+    opacity:0!important;
+    transition:.3s!important;
+  }
+  
+  .eventblur h3{
+    top:15%;
+    font-weight: 300px;
+  }
+
+  .eventblur h2{
+    top: 5% !important;
+    font-weight: 300px;
+  }
+
+  .eventblur p{
+    top: 40% !important;
+    font-weight: 300;
+  }
+  
+  .eventblur:hover :not(img){
+    opacity:1 !important;
+  }

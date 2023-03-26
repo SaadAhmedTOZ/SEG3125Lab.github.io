@@ -9,9 +9,11 @@ function Events() {
 <table class="center">
   <tr>
     <td>
-      <div>
-        <img src="images/hackthehill.png" class ="logo-events"></img>
-        <p class="head-events">Hack the Hill Hackathon</p>
+      <div class="eventblur">
+        <img src="images/hackthehill.png"></img>
+        <h2>Hack the Hill Hackathon</h2>
+        <h3>March 37th 2035</h3>
+        <p>Join us for our first ever Hackathon! We will be hosting a 24 hour hackathon where you can work with your friends to create a project that you are passionate about. We will be providing food, drinks, and prizes for the top 3 teams. </p>
       </div>
     </td>
     <td><div>
