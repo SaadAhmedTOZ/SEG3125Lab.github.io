@@ -2,7 +2,7 @@ import "./NavbarStyles.css";
 function Navbar() {
   return (
     <nav>
-      <a href="/">
+      <a href="/" class="home">
         CESAUO
       </a>
 

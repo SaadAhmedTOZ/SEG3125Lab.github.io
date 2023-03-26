@@ -1,17 +1,17 @@
 import "./RegisterStyles.css";
-function Register() {
+function Register2() {
   return (
       <div class = "box">
         General Member Registeration
         <br />
         <br />
-        <p class="head"> Please enter your name:</p>
+        <p class="head"> Please enter school email:</p>
 
         <div class = "input" > 
           <input type="text" required="required"/>
         </div>
 
-        <a href ="/register2" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
+        <a href ="/register3" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
 
         
       </div>
@@ -19,4 +19,4 @@ function Register() {
   )
 }
 
-export default Register;
+export default Register2;

@@ -14,6 +14,8 @@ import Faq from "./components/Faq";
 import Team from "./components/Team";
 
 import {Routes, Route} from 'react-router-dom'
+import Register2 from "./components/Register2";
+import Register3 from "./components/Register3";
 
 
 
@@ -27,9 +29,17 @@ export default function App()  {
       component = < Join />
       break
 
-      case "/register":
-        component = < Register />
-        break 
+    case "/register":
+      component = < Register />
+      break 
+
+    case "/register2":
+      component = < Register2 />
+      break
+      
+    case "/register3":
+      component = < Register3 />
+      break   
 
     case "/events":
       component = < Events />
