@@ -34,6 +34,11 @@ function Team() {
           <h2>VP Finance</h2>
           John Park
         </th>
+        <th>
+          <img src="images/person6.png" class="person"></img>
+          <h2>VP Communications</h2>
+          Roger Sand
+        </th>
         </tr>
       </table>
 
