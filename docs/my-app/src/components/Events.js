@@ -4,7 +4,6 @@ import "./EventsStyles.css";
 
 function Events() {
   return (
-<<<<<<< HEAD
     <div>
           <h2 class ="title-events">Past Events</h2>
 <table class="center">
@@ -13,14 +12,6 @@ function Events() {
       <div>
         <img src="images/hackthehill.png" class ="logo-events"></img>
         <p class="head-events">Hack the Hill Hackathon</p>
-=======
-      <div class="events">
-        
-        <h1> test </h1>
-        
-        
-
->>>>>>> d7b27edbf98f94a78357551ed1af354da70ea6eb
       </div>
     </td>
     <td><div>

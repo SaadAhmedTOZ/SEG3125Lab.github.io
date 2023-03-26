@@ -1,0 +1,15 @@
+.team {
+  margin-top: 3%;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+  margin-bottom: 8%;
+
+}
+
+.person {
+  width: 400px;
+}

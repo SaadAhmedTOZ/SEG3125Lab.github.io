@@ -3,7 +3,7 @@ function About() {
   return (
       <div class= "about">
 
-        Welcome to the Computer Engineering Club!
+        <h1>Welcome to the Computer Engineering Students' Association of University of Ottawa!</h1>
         <br />
         <br />
         We are a community of passionate computer engineering students who are dedicated to exploring and expanding our knowledge in the field of computer engineering.

@@ -6,11 +6,13 @@ import Join from "./components/Join";
 import Register from "./components/Register";
 import Events from "./components/Events";
 import About from "./components/About";
-<<<<<<< HEAD
+
 import Courses from "./components/Courses";
-=======
+
 import Faq from "./components/Faq";
->>>>>>> d7b27edbf98f94a78357551ed1af354da70ea6eb
+
+import Team from "./components/Team";
+
 import {Routes, Route} from 'react-router-dom'
 
 
@@ -46,7 +48,7 @@ export default function App()  {
       break  
 
     case "/team":
-      //component = < Team/>
+      component = < Team/>
       break  
   }  
   
