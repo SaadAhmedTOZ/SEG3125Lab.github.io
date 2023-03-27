@@ -1,5 +1,5 @@
 import "./NavbarStyles.css";
-function Navbar() {
+function NavbarFrench() {
   return (
     <nav>
       <a href="/" class="home">
@@ -8,12 +8,12 @@ function Navbar() {
 
       <div>
         <ul id="navbar">
-              <li><a href="/about">About</a></li>
+              <li><a href="/about">Tets</a></li>
               <li><a href="/team">Team</a></li>
               <li><a href="/events">Events</a></li>
               <li><a href="/courses">Courses</a></li>
               <li><a href="/faq">FAQ</a></li>
-              <li><a href="/aboutFr">FR</a></li>
+              <li><a href="/joinFr">FR</a></li>
         </ul>
       </div>
 
