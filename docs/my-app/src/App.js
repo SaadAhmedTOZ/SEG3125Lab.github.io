@@ -20,6 +20,9 @@ import AboutFrench from "./components/AboutFrench";
 import TeamFrench from "./components/TeamFrench";
 import JoinFrench from "./components/JoinFrench";
 import EventsFrench from "./components/EventsFrench";
+import RegisterFrench from "./components/RegisterFrench";
+import RegisterFrench2 from "./components/RegisterFrench2";
+import RegisterFrench3 from "./components/RegisterFrench3";
 
 
 
@@ -80,8 +83,21 @@ export default function App()  {
     case "/eventsFr":
       component = < EventsFrench/>
       break 
+
+      case "/registerFr":
+      component = < RegisterFrench/>
+      break 
+
+      case "/registerFr2":
+      component = < RegisterFrench2/>
+      break 
+
+      case "/registerFr3":
+      component = < RegisterFrench3/>
+      break 
   }  
   
+
   return (
       <div className="App">
         <Navbar/>

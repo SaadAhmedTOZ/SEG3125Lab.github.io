@@ -5,7 +5,7 @@ function JoinFrench() {
         
         <img src="images/uottawa.png" class="logo"></img>
         <div class = "button">
-		    <a href ="/register" class = "btn" >Inscription générale des membres</a>
+		    <a href ="/registerFr" class = "btn" >Inscription générale des membres</a>
         </div>
 
       </div>
