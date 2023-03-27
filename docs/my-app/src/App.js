@@ -16,6 +16,10 @@ import Team from "./components/Team";
 import {Routes, Route} from 'react-router-dom'
 import Register2 from "./components/Register2";
 import Register3 from "./components/Register3";
+import AboutFrench from "./components/AboutFrench";
+import TeamFrench from "./components/TeamFrench";
+import JoinFrench from "./components/JoinFrench";
+import EventsFrench from "./components/EventsFrench";
 
 
 
@@ -60,6 +64,22 @@ export default function App()  {
     case "/team":
       component = < Team/>
       break  
+
+    case "/joinFr":
+      component = < JoinFrench/>
+      break 
+      
+    case "/aboutFr":
+      component = < AboutFrench/>
+      break  
+
+    case "/teamFr":
+      component = < TeamFrench/>
+      break 
+
+    case "/eventsFr":
+      component = < EventsFrench/>
+      break 
   }  
   
   return (
