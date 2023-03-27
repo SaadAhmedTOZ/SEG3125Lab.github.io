@@ -13,7 +13,7 @@ function RegisterFrench3() {
         </div> */}
 
         <a href ="/eventsFr" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
-        <a href ="/registerFr2" ><img src="images/arrowbutton.png"  class = "arrowback"></img></a>
+        {/* <a href ="/registerFr2" ><img src="images/arrowbutton.png"  class = "arrowback"></img></a> */}
         
       </div>
 
