@@ -12,7 +12,6 @@ function Register() {
         </div>
 
         <a href ="/register2" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
-
         
       </div>
 

@@ -13,7 +13,7 @@ function Register3() {
         </div> */}
 
         <a href ="/events" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
-
+        <a href ="/register2" ><img src="images/arrowbutton.png"  class = "arrowback"></img></a>
         
       </div>
 

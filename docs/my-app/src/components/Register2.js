@@ -12,7 +12,7 @@ function Register2() {
         </div>
 
         <a href ="/register3" ><img src="images/arrowbutton.png"  class = "arrow"></img></a>
-
+        <a href ="/register" ><img src="images/arrowbutton.png"  class = "arrowback"></img></a>
         
       </div>
 
